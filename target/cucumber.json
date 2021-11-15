@@ -1,0 +1,262 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2158134500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the userInfo Page",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.i_am_on_the_user_info_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-15T00:48:50.162Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2719467900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "As a User I should be able to add a user and validate the user has been added to the table",
+        "description": "",
+        "id": "as-an-enggner-i-need-to-automate-so-i-can-show-my-awesome-automation-skills;as-a-user-i-should-be-able-to-add-a-user-and-validate-the-user-has-been-added-to-the-table",
+        "after": [
+          {
+            "result": {
+              "duration": 780947000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1146316800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I add new user with following details",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.i_add_new_user_with_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "novak",
+                  "bellman",
+                  "novak_bellman",
+                  "1234567",
+                  "Company BBB",
+                  "Admin",
+                  "novak@gmail.com",
+                  "7031234567"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 271825500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on Save button",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.i_click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76942700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "The added user displays on the user table",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.the_added_user_displays_on_the_user_table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@createUser"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1722166000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the userInfo Page",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.i_am_on_the_user_info_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-11-15T00:48:57.408Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1553729900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "As a User I should be able to delete a User",
+        "description": "",
+        "id": "as-an-enggner-i-need-to-automate-so-i-can-show-my-awesome-automation-skills;as-a-user-i-should-be-able-to-delete-a-user",
+        "after": [
+          {
+            "result": {
+              "duration": 773810200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 138629800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I find the user with username \"novak\" and I click on the delete button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"novak\"",
+                  "offset": 30
+                }
+              ],
+              "location": "step_definitions.Create_delete_user_steps.i_find_the_user_with_username_and_i_click_on_the_delete_button(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79786200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "A confirmation dialog should appear with the text: \"Do you really want to delete the user?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Do you really want to delete the user?\"",
+                  "offset": 51
+                }
+              ],
+              "location": "step_definitions.Create_delete_user_steps.a_confirmation_dialog_should_appear_with_the_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78788600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Ok button",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.i_click_on_ok_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202972600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The user should be deleted",
+            "match": {
+              "location": "step_definitions.Create_delete_user_steps.the_user_should_be_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@deleteUser"
+          }
+        ]
+      }
+    ],
+    "name": "As an Enggner I need to automate So I can show my awesome automation skills",
+    "description": "",
+    "id": "as-an-enggner-i-need-to-automate-so-i-can-show-my-awesome-automation-skills",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/create_delete_user.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
